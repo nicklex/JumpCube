@@ -1,0 +1,74 @@
+ body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .cube {
+      width: 100px;
+      height: 100px;
+      background-color: #ff6347;
+      border-radius: 5px;
+      position: relative;
+      /* animation: jump 1s infinite alternate; */ /* Удалена анимация jump */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .count {
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+    }
+    .costcenter
+    {
+        position: absolute;
+        left: 40%;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .cost {
+      position: absolute;
+
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    @keyframes jump {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px); /* Исходная высота прыжка */
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes highJump {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-35px); /* Более высокая высота прыжка */
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
