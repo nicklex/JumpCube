@@ -81,7 +81,7 @@ loadProgress();
         jumpCostClickElement.textContent = jumpCostclick;
       }
       if (mclicktap !== null) {
-        clicktap = parseInt(storedJumpCost);
+        clicktap = parseInt(mclicktap);
       }
       if (storedjumpHeight !== null) {
         jumpHeight = parseInt(storedjumpHeight);
